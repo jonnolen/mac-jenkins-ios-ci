@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>Jenkins Slave</string>
+    <key>ProgramArguments</key>
+    <array>
+    <string>/usr/bin/caffeinate</string>
+    <string>-s</string>
+    <string>/usr/bin/java</string>
+    <string>-jar</string>
+    <string>/usr/local/jenkins/slave.jar</string>
+    <string>-jnlpUrl</string>
+    <string>http://10.0.100.186:8080/computer/ios-ci/slave-agent.jnlp</string>
+    </array>
+    <key>OnDemand</key>
+    <false/>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>UserName</key>
+    <string>_jenkins</string>
+</dict>
+</plist>
