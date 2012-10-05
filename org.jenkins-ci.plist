@@ -16,5 +16,7 @@
     <true/>
     <key>UserName</key>
     <string>_jenkins</string>
+    <key>SessionCreate</key>
+    <true />
 </dict>
 </plist>
